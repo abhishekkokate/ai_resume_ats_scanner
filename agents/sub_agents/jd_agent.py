@@ -40,5 +40,5 @@ jd_agent = LlmAgent(
         - Be concise but informative.
 
 """,
-    output_key="jd_details"
+    output_key="jd_details",
 )

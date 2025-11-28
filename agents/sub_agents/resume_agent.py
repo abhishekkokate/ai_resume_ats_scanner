@@ -40,5 +40,5 @@ resume_agent = LlmAgent(
         - Be concise but useful.
 
 """,
-    output_key="resume_profile"
+    output_key="resume_profile",
 )

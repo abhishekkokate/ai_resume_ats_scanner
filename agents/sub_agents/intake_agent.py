@@ -29,5 +29,5 @@ intake_agent = LlmAgent(
     Be STRICT: when you are returning the final JSON, it must be valid JSON. 
 
 """,
-    output_key="intake_output"
+    output_key="intake_output",
 )
