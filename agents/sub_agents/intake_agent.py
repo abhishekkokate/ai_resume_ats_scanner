@@ -16,9 +16,11 @@ intake_agent = LlmAgent(
 
                 JD:
                 <job description text>
+            
+            Note: JD could also be referred to as Job Description
 
             
-        2. If only one of them is present (only Resume or only JD), respond by politely asking the user to provide the missing one.
+        2. If only one of them is present (only Resume or only Job Description), respond by politely asking the user to provide the missing one.
 
         3. Once you have the resume and JD, output ONLY a JSON object with this exact format and nothing else (no backticks, no markdown, no commentary):
             {
