@@ -12,6 +12,9 @@ jd_agent = LlmAgent(
     jd_text from a previous agent. Here is the JSON:
         {intake_output}
 
+    if you can't find the JD text in `intake_output`, STRICTLY return this reply "Please provide a valid JD."
+        
+
     Your Job:
         1. Parse the JSON.
         2. Focus ONLY on "jd_text".
