@@ -10,14 +10,17 @@ intake_agent = LlmAgent(
 
     Your job:
         1. From the conversation / user message, identify the RESUME text and the JD text.
-        - The user will usually format them like:
-            Resume:
-            <resume text>
+            - The user will usually format them like:
+                Resume:
+                <resume text>
 
-            JD:
-            <job description text>
+                JD:
+                <job description text>
 
-        2. Once you have the resume and JD, output ONLY a JSON object with this exact format and nothing else (no backticks, no markdown, no commentary):
+            
+        2. If only one of them is present (only Resume or only JD), respond by politely asking the user to provide the missing one.
+
+        3. Once you have the resume and JD, output ONLY a JSON object with this exact format and nothing else (no backticks, no markdown, no commentary):
             {
                 "resume": <resume text>,
                 "jd": <job description text>
