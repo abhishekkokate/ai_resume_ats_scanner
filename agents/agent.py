@@ -4,6 +4,7 @@ from .sub_agents import (
     intake_agent,
     resume_agent,
     jd_agent,
+    compare_agent,
 )
 
 parallel_agent = ParallelAgent(
@@ -14,6 +15,6 @@ parallel_agent = ParallelAgent(
 
 root_agent = SequentialAgent(
     name="ResumeATSRootAgent",
-    description="Collects resume and JD. Passes them to special parallel agents for resume and JD parsing.",
-    sub_agents=[intake_agent, parallel_agent],
+    description="Collects resume and JD. Passes them to special parallel agents for resume and JD parsing. Then compares them to produce ATS-style scoring with strengths, gaps, and improvement suggestions.",
+    sub_agents=[intake_agent, parallel_agent, compare_agent],
 )
