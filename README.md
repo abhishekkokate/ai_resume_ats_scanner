@@ -48,7 +48,8 @@ Agent Breakdown
 |**JD Parser Agent** | Extracts responsibilities, required skills, keywords, expectations. |
 |**Compare Agent** | Compares resume vs JD, calculates match score & generates a final report. |
 
-# 🏗️ Architecture Diagram
+# 🏗️ Architecture & Flow Diagram
+![ArchDiagram](assets/Diagram.jpeg)
 ![Flowdiagram](assets/Flowchart.png)
 
 # 📂 Directory Structure
